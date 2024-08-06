@@ -8,7 +8,7 @@ import (
 	"gorm.io/gorm"
 )
 
-var dsn = "host=localhost user=postgres password=11042002 dbname=gotech_db sslmode=disable"
+var dsn = "host= user= password= dbname= sslmode=disable"
 
 func ConnectDatabase() *gorm.DB {
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
